@@ -4,7 +4,7 @@ import uuid
 
 def lambda_handler(event, context):
     try:
-        data = json.loads(event['body'])
+        data = json.loads(event[ 'body'])
     except KeyError:
         return {
             'statusCode': 400,
