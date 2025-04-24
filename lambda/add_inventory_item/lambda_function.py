@@ -2,7 +2,7 @@ import json
 import boto3
 import uuid
 
-def lambda_handler(event, context):
+def lambda_handler(event,context):
     try:
         data = json.loads(event[ 'body'])
     except KeyError:
